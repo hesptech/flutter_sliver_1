@@ -84,7 +84,7 @@ class TextAndButton extends StatelessWidget {
         children: <Widget>[
           Text(
             content!,
-            style: Theme.of(context).textTheme.headlineLarge,
+            style: Theme.of(context).textTheme.headlineSmall,
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.red),

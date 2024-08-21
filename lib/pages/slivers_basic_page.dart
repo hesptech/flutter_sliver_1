@@ -7,12 +7,20 @@ class SliversBasicPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: <Widget>[
-        const SliverAppBar(
+        SliverAppBar(
+          leading: const Icon(Icons.chevron_left),
+          actions: <Widget>[
+            IconButton(
+            onPressed: () {}, 
+            icon: const Icon(Icons.share)
+            ),
+          ],
           //pinned: true,
           floating: false,
           expandedHeight: 120.0,
-          flexibleSpace: FlexibleSpaceBar(
+          flexibleSpace: const FlexibleSpaceBar(
             title: Text('Basic Slivers'),
+            centerTitle: true,
           ),
         ),
         SliverFixedExtentList(
